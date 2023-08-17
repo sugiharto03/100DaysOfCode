@@ -1,0 +1,2 @@
+# 100DaysOfCode
+Practicing Javascript 
