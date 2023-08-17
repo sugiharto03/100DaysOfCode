@@ -1,0 +1,27 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #dafffb;
+  text-align: center;
+}
+header h1{
+    font-size: 50px;
+    margin: 40px 0 0 0;
+    padding-bottom: 5px;
+}
+#border-bottom{
+    width: 10%;
+    border-bottom: 5px solid #33BBC5;
+    margin: auto;
+}
+
+/* body-side */
+main{
+    width: 800px;
+    height: 400px;
+    min-height: 400px;
+    margin: 50px auto;
+    box-shadow: -5px 2px 10px 0px rgba(235, 235, 235, 0.8);
+    border-radius: 5px;
+    background-color: white;
+}

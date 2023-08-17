@@ -4,7 +4,7 @@ const Reset = document.getElementById("Reset");
 const Decrease = document.getElementById("Decrease");
 
 increased.addEventListener("click", function () {
-    let number = parseInt(puller.textContent);
+    let number = puller.textContent;
     number++; 
     puller.textContent = number;
     saveNum();
@@ -14,7 +14,7 @@ Reset.addEventListener("click", function () {
     saveNum();
 });
 Decrease.addEventListener("click", function () {
-    let number = parseInt(puller.textContent);
+    let number = puller.textContent;
     number--; 
     puller.textContent = number;
     saveNum();
