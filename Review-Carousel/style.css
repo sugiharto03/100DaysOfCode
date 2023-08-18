@@ -1,27 +1,75 @@
 body {
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
-  background-color: #dafffb;
+  background-color: #9db2bf;
   text-align: center;
 }
-header h1{
-    font-size: 50px;
-    margin: 40px 0 0 0;
-    padding-bottom: 5px;
+header h1 {
+  font-size: 30px;
+  color: #27374d;
+  margin: 40px 0 0 0;
+  padding-bottom: 5px;
 }
-#border-bottom{
-    width: 10%;
-    border-bottom: 5px solid #33BBC5;
-    margin: auto;
+#border-bottom {
+  width: 5%;
+  border-bottom: 5px solid #526d82;
+  margin: auto;
 }
 
 /* body-side */
-main{
-    width: 800px;
-    height: 400px;
-    min-height: 400px;
-    margin: 50px auto;
-    box-shadow: -5px 2px 10px 0px rgba(235, 235, 235, 0.8);
-    border-radius: 5px;
-    background-color: white;
+main {
+  width: 100%;
+  height: 450px;
+  max-width: 800px;
+  min-height: 400px;
+  margin: 50px auto;
+  padding-bottom: 15px;
+  box-shadow: -1px 1px 10px 0px rgba(82, 109, 130, 1);
+  border-radius: 5px;
+  background-color: #dde6ed;
+}
+.profile {
+  /* background-color: red; */
+  padding-top: 30px;
+  width: 100%;
+  height: 175px;
+  box-sizing: border-box;
+}
+.name,
+.desc {
+  margin-top: 20px;
+}
+h3,
+p {
+  margin: 0 0 5px 0;
+}
+.desc {
+  width: 85%;
+  margin: 20px auto;
+  line-height: 23px;
+  font-weight: 200;
+}
+.btn-suprise button {
+  background-color: #c9d3db;
+  border: 1px solid #526d82;
+  border-radius: 10px;
+  color: #0e2954;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+.btn-suprise button:hover {
+  color: #dde6ed;
+  background-color: #526d82;
+  transition: 0.3s;
+}
+/* carousel */
+.swipe {
+  width: 15%;
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+}
+.previous,
+.next {
+  width: 50%;
 }
