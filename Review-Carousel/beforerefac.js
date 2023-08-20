@@ -1,13 +1,15 @@
-// DOM elements
+// identifier
 const idPrev = document.querySelector(".previous");
 const idNext = document.querySelector(".next");
 const photo = document.getElementById("photo");
+
+//element identifier
 const idname = document.getElementById("name");
 const job = document.getElementById("job");
 const desc = document.getElementById("desc");
 
-// Profile data
-const profile = {
+// Object-setting
+var profile = {
   pic: [
     "img/Group 1.png",
     "img/Group 2.png",
@@ -24,32 +26,34 @@ const profile = {
   ],
 };
 
-// State
-let next = 0;
-
-// Initialize the profile
-function initializeProfile() {
-  updateProfile(0);
+// function-setting
+let next = -1;
+function start() {
+  photo.src = profile.pic[0];
+  idname.textContent = profile.name[0];
+  job.textContent = profile.job[0];
+  desc.textContent = profile.desc[0];
 }
+function btnNext() {
+  if (next >= 3) {
+    next = -1;
+  }
+  next++;
 
-// Update the profile with the given index
-function updateProfile(index) {
-  photo.src = profile.pic[index];
-  idname.textContent = profile.name[index];
-  job.textContent = profile.job[index];
-  desc.textContent = profile.desc[index];
+  photo.src = profile.pic[next];
+  idname.textContent = profile.name[next];
+  job.textContent = profile.job[next];
+  desc.textContent = profile.desc[next];
 }
-
-// Event listeners for next and previous buttons
-idNext.addEventListener("click", function () {
-  next = (next + 1) % profile.pic.length;
-  updateProfile(next);
-});
-
-idPrev.addEventListener("click", function () {
-  next = (next - 1 + profile.pic.length) % profile.pic.length;
-  updateProfile(next);
-});
-
-// Initialize the profile when the page loads
-window.addEventListener("load", initializeProfile);
+function btnPrev() {
+  //sebelum mulau decrement, periksa dulu alurnya. Kalo urusan 0-3 udah kelar baru mulai decrement.
+  if (next <= 0) {
+    next = 3;
+  } else {
+    next--;
+  }
+  photo.src = profile.pic[next];
+  idname.textContent = profile.name[next];
+  job.textContent = profile.job[next];
+  desc.textContent = profile.desc[next];
+}
