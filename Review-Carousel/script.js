@@ -29,7 +29,7 @@ let next = 0;
 
 // Initialize the profile
 function initializeProfile() {
-  updateProfile(0);
+  updateProfile(0); //buat index o sebagai permulaan
 }
 
 // Update the profile with the given index
@@ -53,3 +53,5 @@ idPrev.addEventListener("click", function () {
 
 // Initialize the profile when the page loads
 window.addEventListener("load", initializeProfile);
+
+//maksudnya kalau window = load, jalankan function initializeProfile.
