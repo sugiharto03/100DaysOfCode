@@ -8,12 +8,7 @@ const desc = document.getElementById("desc");
 
 // Profile data
 const profile = {
-  pic: [
-    "img/Group 1.png",
-    "img/Group 2.png",
-    "img/Group 3.png",
-    "img/Group 4.png",
-  ],
+  pic: ["img/Group 1.png", "img/Group 2.png", "img/Group 3.png", "img/Group 4.png"],
   name: ["Georgio Grace", "Syekh Andini", "Junio Theme", "Vinish Wennie"],
   job: ["DESIGNER", "WEDDING FLORIST", "PUBLIC RELATION", "SOCIAL ACTIVIST"],
   desc: [
